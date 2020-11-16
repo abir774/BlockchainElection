@@ -37,18 +37,23 @@
             <p id="accountAddress" class="text-center"></p>
 
              <form onSubmit="App.castVote(); return false;">
-  <div class="form-group">
+   <div class="voting-list" >
+    <h1 class="text-center">Vote list</h1>
+    <hr/>
+    <br/>
     <label for="candidatesSelect">Select Candidate</label>
-    <select class="form-control" id="candidatesSelect">
-    </select>
-  </div>
-  <button type="submit" class="btn btn-primary">Vote</button>
-  <hr />
-</form>
-          </div>
+    <form class="form-group" onsubmit="App.castVote()">
+        <div id="candidatesSelect">
+
         </div>
-      </div>
-    </div>
+        <button type="submit" class="btn btn-primary">Vote</button>
+    </form>
+   </div>
+   <p id="accountAddress" class="text-center"></p>
+   
+  </div>
+</div>
+</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
